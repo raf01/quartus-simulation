@@ -1,0 +1,749 @@
+ -- Copyright (C) 1991-2013 Altera Corporation
+ -- Your use of Altera Corporation's design tools, logic functions 
+ -- and other software and tools, and its AMPP partner logic 
+ -- functions, and any output files from any of the foregoing 
+ -- (including device programming or simulation files), and any 
+ -- associated documentation or information are expressly subject 
+ -- to the terms and conditions of the Altera Program License 
+ -- Subscription Agreement, Altera MegaCore Function License 
+ -- Agreement, or other applicable license agreement, including, 
+ -- without limitation, that your use is for the sole purpose of 
+ -- programming logic devices manufactured by Altera and sold by 
+ -- Altera or its authorized distributors.  Please refer to the 
+ -- applicable agreement for further details.
+ -- 
+ -- This is a Quartus II output file. It is for reporting purposes only, and is
+ -- not intended for use as a Quartus II input file. This file cannot be used
+ -- to make Quartus II pin assignments - for instructions on how to make pin
+ -- assignments, please see Quartus II help.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- NC            : No Connect. This pin has no internal connection to the device.
+ -- DNU           : Do Not Use. This pin MUST NOT be connected.
+ -- VCCPGM        : Dedicated power pin for configuration, which MUST be connected to 1.8V, 2.5V or 3.0V depending on the requirements of the configuration device.
+ -- VCCINT        : Dedicated power pin, which MUST be connected to VCC  (1.2V).
+ -- VCCIO         : Dedicated power pin, which MUST be connected to VCC
+ --                 of its bank.
+ --					Bank 3:		2.5V
+ --					Bank 4:		2.5V
+ --					Bank 5:		2.5V
+ --					Bank 6:		2.5V
+ --					Bank 7:		2.5V
+ --					Bank 8:	2.5V
+ --					Bank 9:	2.5V
+ -- RREF          : External reference resistor for the quad, MUST be connected to
+ --                 GND via a 2k Ohm resistor.
+ -- GND           : Dedicated ground pin. Dedicated GND pins MUST be connected to GND.
+ --					It can also be used to report unused dedicated pins. The connection
+ --					on the board for unused dedicated pins depends on whether this will
+ --					be used in a future design. One example is device migration. When
+ --					using device migration, refer to the device pin-tables. If it is a
+ --					GND pin in the pin table or if it will not be used in a future design
+ --					for another purpose the it MUST be connected to GND. If it is an unused
+ --					dedicated pin, then it can be connected to a valid signal on the board
+ --					(low, high, or toggling) if that signal is required for a different
+ --					revision of the design.
+ -- GND+          : Unused input pin. It can also be used to report unused dual-purpose pins.
+ --					This pin should be connected to GND. It may also be connected  to a
+ --					valid signal  on the board  (low, high, or toggling)  if that signal
+ --					is required for a different revision of the design.
+ -- GND*          : Unused  I/O  pin.   For transceiver I/O banks, connect each pin marked GND*
+ --           	    either individually through a 10k Ohm resistor to GND or tie all pins
+ --           	    together and connect through a single 10k Ohm resistor to GND.
+ -- RESERVED      : Unused I/O pin, which MUST be left unconnected.
+ -- RESERVED_INPUT    : Pin is tri-stated and should be connected to the board.
+ -- RESERVED_INPUT_WITH_WEAK_PULLUP    : Pin is tri-stated with internal weak pull-up resistor.
+ -- RESERVED_INPUT_WITH_BUS_HOLD       : Pin is tri-stated with bus-hold circuitry.
+ -- RESERVED_OUTPUT_DRIVEN_HIGH        : Pin is output driven high.
+ -- GXB_GND*      : Unused GXB Receiver or dedicated reference clock pin. This pin
+ --                 must be connected to GXB_GND through a 10k Ohm resistor.
+ -- GXB_NC        : Unused GXB Transmitter or dedicated clock output pin. This pin
+ --                 must not be connected.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- Pin directions (input, output or bidir) are based on device operating in user mode.
+ ---------------------------------------------------------------------------------
+
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1.78 SJ Web Edition
+CHIP  "modelsim_example"  ASSIGNED TO AN: EP4CGX110DF27C7
+
+Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
+-------------------------------------------------------------------------------------------------------------
+DRAM_ADDR[10]                : A2        : output : 2.5 V             :         : 8         : N              
+DRAM_ADDR[7]                 : A3        : output : 2.5 V             :         : 8         : N              
+DRAM_DQ[6]                   : A4        : bidir  : 2.5 V             :         : 8         : N              
+DRAM_DQ[5]                   : A5        : bidir  : 2.5 V             :         : 8         : N              
+GPIO_1[3]                    : A6        : bidir  : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : A7        :        :                   :         : 8         :                
+GPIO_1[2]                    : A8        : bidir  : 2.5 V             :         : 8         : N              
+HEX1[0]                      : A9        : output : 2.5 V             :         : 8         : N              
+FL_ADDR[7]                   : A10       : output : 2.5 V             :         : 8         : N              
+DRAM_DQ[4]                   : A11       : bidir  : 2.5 V             :         : 8         : N              
+SRAM_ADDR[12]                : A12       : output : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : A13       :        :                   :         : 8         :                
+GND+                         : A14       :        :                   :         : 7         :                
+DRAM_DQ[14]                  : A15       : bidir  : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : A16       :        :                   :         : 7         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : A17       :        :                   :         : 7         :                
+FL_CE_N                      : A18       : output : 2.5 V             :         : 7         : N              
+GPIO_1[25]                   : A19       : bidir  : 2.5 V             :         : 7         : N              
+DRAM_ADDR[3]                 : A20       : output : 2.5 V             :         : 7         : N              
+SRAM_DQ[14]                  : A21       : bidir  : 2.5 V             :         : 7         : N              
+HEX0[2]                      : A22       : output : 2.5 V             :         : 7         : N              
+GPIO_0[25]                   : A23       : bidir  : 2.5 V             :         : 7         : N              
+GPIO_1[5]                    : A24       : bidir  : 2.5 V             :         : 7         : N              
+DRAM_ADDR[8]                 : A25       : output : 2.5 V             :         : 7         : N              
+GXB_GND*                     : AA1       :        :                   :         : QL0       :                
+GXB_GND*                     : AA2       :        :                   :         : QL0       :                
+VCCL_GXB                     : AA3       : power  :                   : 1.2V    :           :                
+VCCL_GXB                     : AA4       : power  :                   : 1.2V    :           :                
+nSTATUS                      : AA5       :        :                   :         : 3         :                
+MSEL0                        : AA6       :        :                   :         : 3         :                
+SRAM_DQ[12]                  : AA7       : bidir  : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA8       :        :                   :         : 3         :                
+GPIO_0[35]                   : AA9       : bidir  : 2.5 V             :         : 3         : N              
+VCCIO3                       : AA10      : power  :                   : 2.5V    : 3         :                
+VCCIO3                       : AA11      : power  :                   : 2.5V    : 3         :                
+VCCIO3                       : AA12      : power  :                   : 2.5V    : 3         :                
+VCCIO3                       : AA13      : power  :                   : 2.5V    : 3         :                
+VCCIO3                       : AA14      : power  :                   : 2.5V    : 3         :                
+KEY[1]                       : AA15      : input  : 2.5 V             :         : 4         : N              
+VCCIO4                       : AA16      : power  :                   : 2.5V    : 4         :                
+GPIO_1[4]                    : AA17      : bidir  : 2.5 V             :         : 4         : N              
+VCCIO4                       : AA18      : power  :                   : 2.5V    : 4         :                
+VCCIO4                       : AA19      : power  :                   : 2.5V    : 4         :                
+VGA_R[0]                     : AA20      : output : 2.5 V             :         : 4         : N              
+VGA_B[1]                     : AA21      : output : 2.5 V             :         : 4         : N              
+SW[4]                        : AA22      : input  : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA23      :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA24      :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA25      :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA26      :        :                   :         : 5         :                
+GND                          : AB1       : gnd    :                   :         :           :                
+GND                          : AB2       : gnd    :                   :         :           :                
+NC                           : AB3       :        :                   :         :           :                
+NC                           : AB4       :        :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB5       :        :                   :         : 3         :                
+CONF_DONE                    : AB6       :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB7       :        :                   :         : 3         :                
+SRAM_WE_N                    : AB8       : output : 2.5 V             :         : 3         : N              
+GPIO_1[10]                   : AB9       : bidir  : 2.5 V             :         : 3         : N              
+GND                          : AB10      : gnd    :                   :         :           :                
+FL_DQ[0]                     : AB11      : bidir  : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB12      :        :                   :         : 3         :                
+GND                          : AB13      : gnd    :                   :         :           :                
+GPIO_1[30]                   : AB14      : bidir  : 2.5 V             :         : 4         : N              
+GPIO_1[0]                    : AB15      : bidir  : 2.5 V             :         : 4         : N              
+GND                          : AB16      : gnd    :                   :         :           :                
+VCCIO4                       : AB17      : power  :                   : 2.5V    : 4         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB18      :        :                   :         : 4         :                
+GND                          : AB19      : gnd    :                   :         :           :                
+FL_RST_N                     : AB20      : output : 2.5 V             :         : 4         : N              
+FL_ADDR[4]                   : AB21      : output : 2.5 V             :         : 4         : N              
+GND                          : AB22      : gnd    :                   :         :           :                
+FL_ADDR[17]                  : AB23      : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB24      :        :                   :         : 5         :                
+GND                          : AB25      : gnd    :                   :         :           :                
+SRAM_ADDR[8]                 : AB26      : output : 2.5 V             :         : 5         : N              
+RREF                         : AC1       :        :                   :         :           :                
+GND                          : AC2       : gnd    :                   :         :           :                
+VCCA_GXB                     : AC3       : power  :                   : 2.5V    :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC4       :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC5       :        :                   :         : 3         :                
+DRAM_CS_N                    : AC6       : output : 2.5 V             :         : 3         : N              
+~ALTERA_NCEO~ / RESERVED_OUTPUT_OPEN_DRAIN : AC7       : output : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC8       :        :                   :         : 3         :                
+HEX2[2]                      : AC9       : output : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC10      :        :                   :         : 3         :                
+AUD_ADCLRCK                  : AC11      : bidir  : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC12      :        :                   :         : 3         :                
+GPIO_0[21]                   : AC13      : bidir  : 2.5 V             :         : 3         : N              
+FL_ADDR[12]                  : AC14      : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC15      :        :                   :         : 4         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC16      :        :                   :         : 4         :                
+LEDG[1]                      : AC17      : output : 2.5 V             :         : 4         : N              
+TCK                          : AC18      : input  : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC19      :        :                   :         : 4         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC20      :        :                   :         : 4         :                
+GPIO_0[33]                   : AC21      : bidir  : 2.5 V             :         : 4         : N              
+DRAM_BA_1                    : AC22      : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC23      :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC24      :        :                   :         : 5         :                
+GPIO_0[23]                   : AC25      : bidir  : 2.5 V             :         : 5         : N              
+GPIO_0[11]                   : AC26      : bidir  : 2.5 V             :         : 5         : N              
+GND                          : AD1       : gnd    :                   :         :           :                
+VCCL_GXB                     : AD2       : power  :                   : 1.2V    :           :                
+GPIO_0[5]                    : AD3       : bidir  : 2.5 V             :         : 3         : N              
+FL_ADDR[2]                   : AD4       : output : 2.5 V             :         : 3         : N              
+KEY[2]                       : AD5       : input  : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AD6       :        :                   :         : 3         :                
+GPIO_0[6]                    : AD7       : bidir  : 2.5 V             :         : 3         : N              
+VGA_G[0]                     : AD8       : output : 2.5 V             :         : 3         : N              
+FL_DQ[1]                     : AD9       : bidir  : 2.5 V             :         : 3         : N              
+SD_CLK                       : AD10      : output : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AD11      :        :                   :         : 3         :                
+SRAM_DQ[9]                   : AD12      : bidir  : 2.5 V             :         : 3         : N              
+SD_CMD                       : AD13      : bidir  : 2.5 V             :         : 3         : N              
+GPIO_1[19]                   : AD14      : bidir  : 2.5 V             :         : 4         : N              
+DRAM_ADDR[1]                 : AD15      : output : 2.5 V             :         : 4         : N              
+GPIO_1[6]                    : AD16      : bidir  : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AD17      :        :                   :         : 4         :                
+LEDR[2]                      : AD18      : output : 2.5 V             :         : 4         : N              
+VGA_R[3]                     : AD19      : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AD20      :        :                   :         : 4         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AD21      :        :                   :         : 4         :                
+FL_ADDR[9]                   : AD22      : output : 2.5 V             :         : 4         : N              
+DRAM_ADDR[0]                 : AD23      : output : 2.5 V             :         : 4         : N              
+LEDR[7]                      : AD24      : output : 2.5 V             :         : 4         : N              
+CLOCK_27[0]                  : AD25      : input  : 2.5 V             :         : 5         : N              
+SRAM_UB_N                    : AD26      : output : 2.5 V             :         : 5         : N              
+GPIO_1[1]                    : AE1       : bidir  : 2.5 V             :         : 3         : N              
+GPIO_1[33]                   : AE2       : bidir  : 2.5 V             :         : 3         : N              
+SRAM_DQ[1]                   : AE3       : bidir  : 2.5 V             :         : 3         : N              
+GND                          : AE4       : gnd    :                   :         :           :                
+HEX1[3]                      : AE5       : output : 2.5 V             :         : 3         : N              
+DRAM_ADDR[6]                 : AE6       : output : 2.5 V             :         : 3         : N              
+DRAM_RAS_N                   : AE7       : output : 2.5 V             :         : 3         : N              
+GND                          : AE8       : gnd    :                   :         :           :                
+SRAM_OE_N                    : AE9       : output : 2.5 V             :         : 3         : N              
+HEX0[6]                      : AE10      : output : 2.5 V             :         : 3         : N              
+GPIO_1[34]                   : AE11      : bidir  : 2.5 V             :         : 3         : N              
+GND                          : AE12      : gnd    :                   :         :           :                
+HEX2[6]                      : AE13      : output : 2.5 V             :         : 3         : N              
+FL_ADDR[5]                   : AE14      : output : 2.5 V             :         : 4         : N              
+HEX3[0]                      : AE15      : output : 2.5 V             :         : 4         : N              
+GND                          : AE16      : gnd    :                   :         :           :                
+CLOCK_24[0]                  : AE17      : input  : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE18      :        :                   :         : 4         :                
+LEDG[0]                      : AE19      : output : 2.5 V             :         : 4         : N              
+GND                          : AE20      : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE21      :        :                   :         : 4         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE22      :        :                   :         : 4         :                
+DRAM_DQ[1]                   : AE23      : bidir  : 2.5 V             :         : 4         : N              
+GND                          : AE24      : gnd    :                   :         :           :                
+SW[3]                        : AE25      : input  : 2.5 V             :         : 5         : N              
+LEDR[1]                      : AE26      : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AF2       :        :                   :         : 3         :                
+LEDG[7]                      : AF3       : output : 2.5 V             :         : 3         : N              
+SRAM_ADDR[10]                : AF4       : output : 2.5 V             :         : 3         : N              
+DRAM_ADDR[4]                 : AF5       : output : 2.5 V             :         : 3         : N              
+SRAM_DQ[13]                  : AF6       : bidir  : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AF7       :        :                   :         : 3         :                
+HEX0[0]                      : AF8       : output : 2.5 V             :         : 3         : N              
+FL_ADDR[3]                   : AF9       : output : 2.5 V             :         : 3         : N              
+SRAM_ADDR[4]                 : AF10      : output : 2.5 V             :         : 3         : N              
+GPIO_0[34]                   : AF11      : bidir  : 2.5 V             :         : 3         : N              
+SD_DAT3                      : AF12      : bidir  : 2.5 V             :         : 3         : N              
+GND+                         : AF13      :        :                   :         : 4         :                
+GND+                         : AF14      :        :                   :         : 4         :                
+FL_ADDR[13]                  : AF15      : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AF16      :        :                   :         : 4         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AF17      :        :                   :         : 4         :                
+DRAM_DQ[0]                   : AF18      : bidir  : 2.5 V             :         : 4         : N              
+GPIO_0[8]                    : AF19      : bidir  : 2.5 V             :         : 4         : N              
+GPIO_0[1]                    : AF20      : bidir  : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AF21      :        :                   :         : 4         :                
+GPIO_0[26]                   : AF22      : bidir  : 2.5 V             :         : 4         : N              
+CLOCK_24[1]                  : AF23      : input  : 2.5 V             :         : 4         : N              
+GPIO_1[23]                   : AF24      : bidir  : 2.5 V             :         : 4         : N              
+GPIO_0[9]                    : AF25      : bidir  : 2.5 V             :         : 4         : N              
+GPIO_0[14]                   : B1        : bidir  : 2.5 V             :         : 8         : N              
+VGA_HS                       : B2        : output : 2.5 V             :         : 8         : N              
+GND                          : B3        : gnd    :                   :         :           :                
+VGA_G[1]                     : B4        : output : 2.5 V             :         : 8         : N              
+HEX1[4]                      : B5        : output : 2.5 V             :         : 8         : N              
+GPIO_0[2]                    : B6        : bidir  : 2.5 V             :         : 8         : N              
+FL_ADDR[8]                   : B7        : output : 2.5 V             :         : 8         : N              
+GND                          : B8        : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : B9        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : B10       :        :                   :         : 8         :                
+FL_ADDR[21]                  : B11       : output : 2.5 V             :         : 8         : N              
+GND                          : B12       : gnd    :                   :         :           :                
+SRAM_ADDR[15]                : B13       : output : 2.5 V             :         : 8         : N              
+GND+                         : B14       :        :                   :         : 7         :                
+HEX0[4]                      : B15       : output : 2.5 V             :         : 7         : N              
+GND                          : B16       : gnd    :                   :         :           :                
+GPIO_0[0]                    : B17       : bidir  : 2.5 V             :         : 7         : N              
+SRAM_DQ[15]                  : B18       : bidir  : 2.5 V             :         : 7         : N              
+SRAM_ADDR[1]                 : B19       : output : 2.5 V             :         : 7         : N              
+GND                          : B20       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : B21       :        :                   :         : 7         :                
+FL_WE_N                      : B22       : output : 2.5 V             :         : 7         : N              
+FL_ADDR[20]                  : B23       : output : 2.5 V             :         : 7         : N              
+GND                          : B24       : gnd    :                   :         :           :                
+KEY[3]                       : B25       : input  : 2.5 V             :         : 6         : N              
+HEX2[3]                      : B26       : output : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : C1        :        :                   :         : 8         :                
+HEX1[5]                      : C2        : output : 2.5 V             :         : 8         : N              
+GPIO_0[12]                   : C3        : bidir  : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : C4        :        :                   :         : 8         :                
+GPIO_0[13]                   : C5        : bidir  : 2.5 V             :         : 8         : N              
+GPIO_0[22]                   : C6        : bidir  : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : C7        :        :                   :         : 8         :                
+SRAM_DQ[6]                   : C8        : bidir  : 2.5 V             :         : 8         : N              
+SRAM_LB_N                    : C9        : output : 2.5 V             :         : 8         : N              
+HEX3[6]                      : C10       : output : 2.5 V             :         : 8         : N              
+AUD_DACLRCK                  : C11       : bidir  : 2.5 V             :         : 8         : N              
+UART_TXD                     : C12       : output : 2.5 V             :         : 8         : N              
+GPIO_1[16]                   : C13       : bidir  : 2.5 V             :         : 8         : N              
+GPIO_1[31]                   : C14       : bidir  : 2.5 V             :         : 7         : N              
+GPIO_1[20]                   : C15       : bidir  : 2.5 V             :         : 7         : N              
+CLOCK_27[1]                  : C16       : input  : 2.5 V             :         : 7         : N              
+GPIO_0[7]                    : C17       : bidir  : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : C18       :        :                   :         : 7         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C19       :        :                   :         : 7         :                
+TDI                          : C20       : input  : 2.5 V             :         : 7         : N              
+FL_ADDR[15]                  : C21       : output : 2.5 V             :         : 7         : N              
+HEX2[0]                      : C22       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : C23       :        :                   :         : 7         :                
+GPIO_1[12]                   : C24       : bidir  : 2.5 V             :         : 6         : N              
+GPIO_0[30]                   : C25       : bidir  : 2.5 V             :         : 6         : N              
+LEDR[6]                      : C26       : output : 2.5 V             :         : 6         : N              
+SW[0]                        : D1        : input  : 2.5 V             :         : 8         : N              
+GPIO_1[29]                   : D2        : bidir  : 2.5 V             :         : 8         : N              
+HEX3[5]                      : D3        : output : 2.5 V             :         : 8         : N              
+LEDR[0]                      : D4        : output : 2.5 V             :         : 8         : N              
+~ALTERA_NCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : D5        : input  : 2.5 V             :         : 9         : N              
+~ALTERA_DATA0~ / RESERVED_INPUT_WITH_WEAK_PULLUP : D6        : input  : 2.5 V             :         : 9         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : D7        :        :                   :         : 8         :                
+GPIO_0[3]                    : D8        : bidir  : 2.5 V             :         : 8         : N              
+SRAM_DQ[8]                   : D9        : bidir  : 2.5 V             :         : 8         : N              
+FL_ADDR[1]                   : D10       : output : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : D11       :        :                   :         : 8         :                
+SD_DAT                       : D12       : bidir  : 2.5 V             :         : 8         : N              
+HEX3[4]                      : D13       : output : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : D14       :        :                   :         : 8         :                
+SRAM_ADDR[2]                 : D15       : output : 2.5 V             :         : 7         : N              
+GPIO_0[31]                   : D16       : bidir  : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : D17       :        :                   :         : 7         :                
+GPIO_0[32]                   : D18       : bidir  : 2.5 V             :         : 7         : N              
+FL_ADDR[10]                  : D19       : output : 2.5 V             :         : 7         : N              
+GPIO_0[16]                   : D20       : bidir  : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : D21       :        :                   :         : 7         :                
+DRAM_DQ[2]                   : D22       : bidir  : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : D23       :        :                   :         : 7         :                
+SW[7]                        : D24       : input  : 2.5 V             :         : 6         : N              
+GPIO_0[20]                   : D25       : bidir  : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : D26       :        :                   :         : 6         :                
+SW[2]                        : E1        : input  : 2.5 V             :         : 8         : N              
+SW[1]                        : E2        : input  : 2.5 V             :         : 8         : N              
+GND                          : E3        : gnd    :                   :         :           :                
+GND                          : E4        : gnd    :                   :         :           :                
+nCONFIG                      : E5        :        :                   :         : 9         :                
+~ALTERA_ASDO_DATA1~ / RESERVED_INPUT_WITH_WEAK_PULLUP : E6        : input  : 2.5 V             :         : 9         : N              
+SRAM_DQ[3]                   : E7        : bidir  : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : E8        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : E9        :        :                   :         : 8         :                
+VCCIO8                       : E10       : power  :                   : 2.5V    : 8         :                
+FL_ADDR[6]                   : E11       : output : 2.5 V             :         : 8         : N              
+DRAM_DQ[7]                   : E12       : bidir  : 2.5 V             :         : 8         : N              
+VGA_R[1]                     : E13       : output : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : E14       :        :                   :         : 8         :                
+SRAM_ADDR[6]                 : E15       : output : 2.5 V             :         : 7         : N              
+FL_DQ[6]                     : E16       : bidir  : 2.5 V             :         : 7         : N              
+DRAM_DQ[3]                   : E17       : bidir  : 2.5 V             :         : 7         : N              
+HEX0[5]                      : E18       : output : 2.5 V             :         : 7         : N              
+FL_DQ[7]                     : E19       : bidir  : 2.5 V             :         : 7         : N              
+FL_DQ[2]                     : E20       : bidir  : 2.5 V             :         : 7         : N              
+GPIO_0[27]                   : E21       : bidir  : 2.5 V             :         : 7         : N              
+DRAM_CAS_N                   : E22       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : E23       :        :                   :         : 7         :                
+DRAM_DQ[15]                  : E24       : bidir  : 2.5 V             :         : 6         : N              
+UART_RXD                     : E25       : input  : 2.5 V             :         : 6         : N              
+DRAM_DQ[8]                   : E26       : bidir  : 2.5 V             :         : 6         : N              
+GND                          : F1        : gnd    :                   :         :           :                
+GND                          : F2        : gnd    :                   :         :           :                
+GXB_NC                       : F3        :        :                   :         : QL1       :                
+GXB_NC                       : F4        :        :                   :         : QL1       :                
+TMS                          : F5        : input  :                   :         : 9         :                
+~ALTERA_DCLK~                : F6        : output : 2.5 V             :         : 9         : N              
+GND                          : F7        : gnd    :                   :         :           :                
+SW[8]                        : F8        : input  : 2.5 V             :         : 8         : N              
+VCCIO8                       : F9        : power  :                   : 2.5V    : 8         :                
+GND                          : F10       : gnd    :                   :         :           :                
+VCCIO8                       : F11       : power  :                   : 2.5V    : 8         :                
+GND                          : F12       : gnd    :                   :         :           :                
+VCCIO8                       : F13       : power  :                   : 2.5V    : 8         :                
+VCCIO8                       : F14       : power  :                   : 2.5V    : 8         :                
+LEDR[5]                      : F15       : output : 2.5 V             :         : 7         : N              
+VCCIO7                       : F16       : power  :                   : 2.5V    : 7         :                
+GND                          : F17       : gnd    :                   :         :           :                
+VCCIO7                       : F18       : power  :                   : 2.5V    : 7         :                
+GND                          : F19       : gnd    :                   :         :           :                
+VCCIO7                       : F20       : power  :                   : 2.5V    : 7         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F21       :        :                   :         : 6         :                
+GND                          : F22       : gnd    :                   :         :           :                
+EXT_CLOCK                    : F23       : input  : 2.5 V             :         : 6         : N              
+SRAM_ADDR[14]                : F24       : output : 2.5 V             :         : 6         : N              
+GND                          : F25       : gnd    :                   :         :           :                
+SRAM_ADDR[11]                : F26       : output : 2.5 V             :         : 6         : N              
+GXB_GND*                     : G1        :        :                   :         : QL1       :                
+GXB_GND*                     : G2        :        :                   :         : QL1       :                
+GND                          : G3        : gnd    :                   :         :           :                
+GND                          : G4        : gnd    :                   :         :           :                
+VCCL_GXB                     : G5        : power  :                   : 1.2V    :           :                
+TDI                          : G6        : input  :                   :         : 9         :                
+VCCIO9                       : G7        : power  :                   : 2.5V    : 9         :                
+TCK                          : G8        : input  :                   :         : 9         :                
+LEDG[6]                      : G9        : output : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : G10       :        :                   :         : 8         :                
+AUD_ADCDAT                   : G11       : input  : 2.5 V             :         : 8         : N              
+VCCIO8                       : G12       : power  :                   : 2.5V    : 8         :                
+GND                          : G13       : gnd    :                   :         :           :                
+GPIO_0[28]                   : G14       : bidir  : 2.5 V             :         : 7         : N              
+SRAM_ADDR[5]                 : G15       : output : 2.5 V             :         : 7         : N              
+VCCIO7                       : G16       : power  :                   : 2.5V    : 7         :                
+SW[5]                        : G17       : input  : 2.5 V             :         : 7         : N              
+VCCIO7                       : G18       : power  :                   : 2.5V    : 7         :                
+VCCIO7                       : G19       : power  :                   : 2.5V    : 7         :                
+GND                          : G20       : gnd    :                   :         :           :                
+VCCD_PLL                     : G21       : power  :                   : 1.2V    :           :                
+FL_ADDR[11]                  : G22       : output : 2.5 V             :         : 6         : N              
+GPIO_1[21]                   : G23       : bidir  : 2.5 V             :         : 6         : N              
+SRAM_DQ[7]                   : G24       : bidir  : 2.5 V             :         : 6         : N              
+HEX1[6]                      : G25       : output : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : G26       :        :                   :         : 6         :                
+GND                          : H1        : gnd    :                   :         :           :                
+GND                          : H2        : gnd    :                   :         :           :                
+GXB_NC                       : H3        :        :                   :         : QL1       :                
+GXB_NC                       : H4        :        :                   :         : QL1       :                
+VCCL_GXB                     : H5        : power  :                   : 1.2V    :           :                
+VCCA                         : H6        : power  :                   : 2.5V    :           :                
+nCE                          : H7        :        :                   :         : 9         :                
+TDO                          : H8        : output :                   :         : 9         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : H9        :        :                   :         : 8         :                
+GPIO_1[17]                   : H10       : bidir  : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : H11       :        :                   :         : 8         :                
+FL_ADDR[0]                   : H12       : output : 2.5 V             :         : 8         : N              
+GPIO_1[7]                    : H13       : bidir  : 2.5 V             :         : 8         : N              
+HEX2[5]                      : H14       : output : 2.5 V             :         : 7         : N              
+GPIO_1[26]                   : H15       : bidir  : 2.5 V             :         : 7         : N              
+DRAM_CLK                     : H16       : output : 2.5 V             :         : 7         : N              
+GPIO_1[8]                    : H17       : bidir  : 2.5 V             :         : 7         : N              
+FL_DQ[5]                     : H18       : bidir  : 2.5 V             :         : 7         : N              
+GND                          : H19       : gnd    :                   :         :           :                
+VCCA                         : H20       : power  :                   : 2.5V    :           :                
+VCCIO6                       : H21       : power  :                   : 2.5V    : 6         :                
+DRAM_ADDR[2]                 : H22       : output : 2.5 V             :         : 6         : N              
+DRAM_DQ[10]                  : H23       : bidir  : 2.5 V             :         : 6         : N              
+HEX3[3]                      : H24       : output : 2.5 V             :         : 6         : N              
+DRAM_DQ[12]                  : H25       : bidir  : 2.5 V             :         : 6         : N              
+LEDR[8]                      : H26       : output : 2.5 V             :         : 6         : N              
+GXB_GND*                     : J1        :        :                   :         : QL1       :                
+GXB_GND*                     : J2        :        :                   :         : QL1       :                
+GND                          : J3        : gnd    :                   :         :           :                
+GND                          : J4        : gnd    :                   :         :           :                
+VCCH_GXB                     : J5        : power  :                   : 2.5V    :           :                
+VCCD_PLL                     : J6        : power  :                   : 1.2V    :           :                
+GND                          : J7        : gnd    :                   :         :           :                
+GND                          : J8        : gnd    :                   :         :           :                
+VCC_CLKIN8B                  : J9        : power  :                   : 2.5V    : 8B        :                
+VCCINT                       : J10       : power  :                   : 1.2V    :           :                
+AUD_DACDAT                   : J11       : output : 2.5 V             :         : 8         : N              
+GPIO_0[17]                   : J12       : bidir  : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : J13       :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : J14       :        :                   :         : 8         :                
+FL_DQ[3]                     : J15       : bidir  : 2.5 V             :         : 7         : N              
+GPIO_1[32]                   : J16       : bidir  : 2.5 V             :         : 7         : N              
+DRAM_UDQM                    : J17       : output : 2.5 V             :         : 7         : N              
+HEX0[3]                      : J18       : output : 2.5 V             :         : 7         : N              
+KEY[0]                       : J19       : input  : 2.5 V             :         : 7         : N              
+GPIO_1[22]                   : J20       : bidir  : 2.5 V             :         : 6         : N              
+VCCIO6                       : J21       : power  :                   : 2.5V    : 6         :                
+GND                          : J22       : gnd    :                   :         :           :                
+AUD_XCK                      : J23       : output : 2.5 V             :         : 6         : N              
+HEX0[1]                      : J24       : output : 2.5 V             :         : 6         : N              
+PS2_DAT                      : J25       : input  : 2.5 V             :         : 6         : N              
+HEX3[2]                      : J26       : output : 2.5 V             :         : 6         : N              
+GND                          : K1        : gnd    :                   :         :           :                
+GND                          : K2        : gnd    :                   :         :           :                
+GXB_NC                       : K3        :        :                   :         : QL1       :                
+GXB_NC                       : K4        :        :                   :         : QL1       :                
+VCCA_GXB                     : K5        : power  :                   : 2.5V    :           :                
+GND                          : K6        : gnd    :                   :         :           :                
+VCCA                         : K7        : power  :                   : 2.5V    :           :                
+VCCINT                       : K8        : power  :                   : 1.2V    :           :                
+GXB_GND*                     : K9        :        :                   :         : 8B        :                
+GXB_GND*                     : K10       :        :                   :         : 8B        :                
+GND                          : K11       : gnd    :                   :         :           :                
+VGA_B[0]                     : K12       : output : 2.5 V             :         : 8         : N              
+GPIO_1[13]                   : K13       : bidir  : 2.5 V             :         : 8         : N              
+VCC_CLKIN8A                  : K14       : power  :                   : 2.5V    : 8A        :                
+GND                          : K15       : gnd    :                   :         :           :                
+VCCINT                       : K16       : power  :                   : 1.2V    :           :                
+GND                          : K17       : gnd    :                   :         :           :                
+VCCINT                       : K18       : power  :                   : 1.2V    :           :                
+GPIO_0[10]                   : K19       : bidir  : 2.5 V             :         : 6         : N              
+SRAM_ADDR[0]                 : K20       : output : 2.5 V             :         : 6         : N              
+TCS                          : K21       : input  : 2.5 V             :         : 6         : N              
+DRAM_DQ[13]                  : K22       : bidir  : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : K23       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : K24       :        :                   :         : 6         :                
+GND                          : K25       : gnd    :                   :         :           :                
+LEDR[3]                      : K26       : output : 2.5 V             :         : 6         : N              
+GXB_GND*                     : L1        :        :                   :         : QL1       :                
+GXB_GND*                     : L2        :        :                   :         : QL1       :                
+GND                          : L3        : gnd    :                   :         :           :                
+GND                          : L4        : gnd    :                   :         :           :                
+VCCL_GXB                     : L5        : power  :                   : 1.2V    :           :                
+VCCD_PLL                     : L6        : power  :                   : 1.2V    :           :                
+VCCINT                       : L7        : power  :                   : 1.2V    :           :                
+GND                          : L8        : gnd    :                   :         :           :                
+GXB_GND*                     : L9        :        :                   :         : 8B        :                
+GXB_GND*                     : L10       :        :                   :         : 8B        :                
+VCCINT                       : L11       : power  :                   : 1.2V    :           :                
+GND                          : L12       : gnd    :                   :         :           :                
+VCCINT                       : L13       : power  :                   : 1.2V    :           :                
+GXB_GND*                     : L14       :        :                   :         : 8A        :                
+GXB_GND*                     : L15       :        :                   :         : 8A        :                
+GND                          : L16       : gnd    :                   :         :           :                
+VCCINT                       : L17       : power  :                   : 1.2V    :           :                
+GND                          : L18       : gnd    :                   :         :           :                
+SRAM_DQ[5]                   : L19       : bidir  : 2.5 V             :         : 6         : N              
+VCCIO6                       : L20       : power  :                   : 2.5V    : 6         :                
+HEX3[1]                      : L21       : output : 2.5 V             :         : 6         : N              
+FL_ADDR[16]                  : L22       : output : 2.5 V             :         : 6         : N              
+SRAM_ADDR[13]                : L23       : output : 2.5 V             :         : 6         : N              
+GPIO_0[19]                   : L24       : bidir  : 2.5 V             :         : 6         : N              
+I2C_SCLK                     : L25       : output : 2.5 V             :         : 6         : N              
+FL_ADDR[14]                  : L26       : output : 2.5 V             :         : 6         : N              
+GND                          : M1        : gnd    :                   :         :           :                
+GND                          : M2        : gnd    :                   :         :           :                
+GXB_NC                       : M3        :        :                   :         : QL1       :                
+GXB_NC                       : M4        :        :                   :         : QL1       :                
+VCCH_GXB                     : M5        : power  :                   : 2.5V    :           :                
+VCCD_PLL                     : M6        : power  :                   : 1.2V    :           :                
+GND                          : M7        : gnd    :                   :         :           :                
+VCCINT                       : M8        : power  :                   : 1.2V    :           :                
+GND                          : M9        : gnd    :                   :         :           :                
+VCCINT                       : M10       : power  :                   : 1.2V    :           :                
+GND                          : M11       : gnd    :                   :         :           :                
+VCCINT                       : M12       : power  :                   : 1.2V    :           :                
+GND                          : M13       : gnd    :                   :         :           :                
+VCCINT                       : M14       : power  :                   : 1.2V    :           :                
+GND                          : M15       : gnd    :                   :         :           :                
+VCCINT                       : M16       : power  :                   : 1.2V    :           :                
+GND                          : M17       : gnd    :                   :         :           :                
+VCCINT                       : M18       : power  :                   : 1.2V    :           :                
+CLOCK_50                     : M19       : input  : 2.5 V             :         : 6         : N              
+VCCIO6                       : M20       : power  :                   : 2.5V    : 6         :                
+GND                          : M21       : gnd    :                   :         :           :                
+VGA_G[2]                     : M22       : output : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : M23       :        :                   :         : 6         :                
+GPIO_0[24]                   : M24       : bidir  : 2.5 V             :         : 6         : N              
+SRAM_ADDR[9]                 : M25       : output : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : M26       :        :                   :         : 6         :                
+GXB_GND*                     : N1        :        :                   :         : QL1       :                
+GXB_GND*                     : N2        :        :                   :         : QL1       :                
+GND                          : N3        : gnd    :                   :         :           :                
+GND                          : N4        : gnd    :                   :         :           :                
+VCCA_GXB                     : N5        : power  :                   : 2.5V    :           :                
+GND                          : N6        : gnd    :                   :         :           :                
+VCCA                         : N7        : power  :                   : 2.5V    :           :                
+GND                          : N8        : gnd    :                   :         :           :                
+VCCINT                       : N9        : power  :                   : 1.2V    :           :                
+GND                          : N10       : gnd    :                   :         :           :                
+VCCINT                       : N11       : power  :                   : 1.2V    :           :                
+GND                          : N12       : gnd    :                   :         :           :                
+VCCINT                       : N13       : power  :                   : 1.2V    :           :                
+GND                          : N14       : gnd    :                   :         :           :                
+VCCINT                       : N15       : power  :                   : 1.2V    :           :                
+GND                          : N16       : gnd    :                   :         :           :                
+VCCINT                       : N17       : power  :                   : 1.2V    :           :                
+GND                          : N18       : gnd    :                   :         :           :                
+HEX1[2]                      : N19       : output : 2.5 V             :         : 6         : N              
+GPIO_0[29]                   : N20       : bidir  : 2.5 V             :         : 6         : N              
+VCCIO6                       : N21       : power  :                   : 2.5V    : 6         :                
+GPIO_1[18]                   : N22       : bidir  : 2.5 V             :         : 6         : N              
+GPIO_1[9]                    : N23       : bidir  : 2.5 V             :         : 6         : N              
+DRAM_WE_N                    : N24       : output : 2.5 V             :         : 6         : N              
+GND+                         : N25       :        :                   :         : 6         :                
+GND+                         : N26       :        :                   :         : 6         :                
+GND                          : P1        : gnd    :                   :         :           :                
+GND                          : P2        : gnd    :                   :         :           :                
+GXB_NC                       : P3        :        :                   :         : QL0       :                
+GXB_NC                       : P4        :        :                   :         : QL0       :                
+VCCL_GXB                     : P5        : power  :                   : 1.2V    :           :                
+GND                          : P6        : gnd    :                   :         :           :                
+VCCA                         : P7        : power  :                   : 2.5V    :           :                
+VCCINT                       : P8        : power  :                   : 1.2V    :           :                
+GND                          : P9        : gnd    :                   :         :           :                
+VCCINT                       : P10       : power  :                   : 1.2V    :           :                
+GND                          : P11       : gnd    :                   :         :           :                
+VCCINT                       : P12       : power  :                   : 1.2V    :           :                
+GND                          : P13       : gnd    :                   :         :           :                
+VCCINT                       : P14       : power  :                   : 1.2V    :           :                
+GND                          : P15       : gnd    :                   :         :           :                
+VCCINT                       : P16       : power  :                   : 1.2V    :           :                
+GND                          : P17       : gnd    :                   :         :           :                
+VCCINT                       : P18       : power  :                   : 1.2V    :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : P19       :        :                   :         : 5         :                
+LEDR[4]                      : P20       : output : 2.5 V             :         : 5         : N              
+VCCIO5                       : P21       : power  :                   : 2.5V    : 5         :                
+GND                          : P22       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : P23       :        :                   :         : 5         :                
+SRAM_ADDR[7]                 : P24       : output : 2.5 V             :         : 5         : N              
+GND                          : P25       : gnd    :                   :         :           :                
+GND+                         : P26       :        :                   :         : 5         :                
+GXB_GND*                     : R1        :        :                   :         : QL0       :                
+GXB_GND*                     : R2        :        :                   :         : QL0       :                
+GND                          : R3        : gnd    :                   :         :           :                
+GND                          : R4        : gnd    :                   :         :           :                
+VCCH_GXB                     : R5        : power  :                   : 2.5V    :           :                
+VCCD_PLL                     : R6        : power  :                   : 1.2V    :           :                
+VCCINT                       : R7        : power  :                   : 1.2V    :           :                
+GND                          : R8        : gnd    :                   :         :           :                
+VCCINT                       : R9        : power  :                   : 1.2V    :           :                
+GND                          : R10       : gnd    :                   :         :           :                
+VCCINT                       : R11       : power  :                   : 1.2V    :           :                
+GND                          : R12       : gnd    :                   :         :           :                
+VCCINT                       : R13       : power  :                   : 1.2V    :           :                
+GND                          : R14       : gnd    :                   :         :           :                
+VCCINT                       : R15       : power  :                   : 1.2V    :           :                
+GND                          : R16       : gnd    :                   :         :           :                
+VCCINT                       : R17       : power  :                   : 1.2V    :           :                
+GND                          : R18       : gnd    :                   :         :           :                
+GPIO_1[15]                   : R19       : bidir  : 2.5 V             :         : 5         : N              
+VGA_VS                       : R20       : output : 2.5 V             :         : 5         : N              
+VCCIO5                       : R21       : power  :                   : 2.5V    : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : R22       :        :                   :         : 5         :                
+SRAM_ADDR[16]                : R23       : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : R24       :        :                   :         : 5         :                
+TDO                          : R25       : output : 2.5 V             :         : 5         : N              
+GND+                         : R26       :        :                   :         : 5         :                
+GND                          : T1        : gnd    :                   :         :           :                
+GND                          : T2        : gnd    :                   :         :           :                
+GXB_NC                       : T3        :        :                   :         : QL0       :                
+GXB_NC                       : T4        :        :                   :         : QL0       :                
+VCCA_GXB                     : T5        : power  :                   : 2.5V    :           :                
+VCCD_PLL                     : T6        : power  :                   : 1.2V    :           :                
+GND                          : T7        : gnd    :                   :         :           :                
+VCCINT                       : T8        : power  :                   : 1.2V    :           :                
+GXB_GND*                     : T9        :        :                   :         : 3B        :                
+GXB_GND*                     : T10       :        :                   :         : 3B        :                
+GND                          : T11       : gnd    :                   :         :           :                
+VCCINT                       : T12       : power  :                   : 1.2V    :           :                
+GND                          : T13       : gnd    :                   :         :           :                
+GXB_GND*                     : T14       :        :                   :         : 3A        :                
+GXB_GND*                     : T15       :        :                   :         : 3A        :                
+VCCINT                       : T16       : power  :                   : 1.2V    :           :                
+GND                          : T17       : gnd    :                   :         :           :                
+VCCINT                       : T18       : power  :                   : 1.2V    :           :                
+GPIO_0[4]                    : T19       : bidir  : 2.5 V             :         : 5         : N              
+VCCIO5                       : T20       : power  :                   : 2.5V    : 5         :                
+DRAM_BA_0                    : T21       : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : T22       :        :                   :         : 5         :                
+GPIO_0[18]                   : T23       : bidir  : 2.5 V             :         : 5         : N              
+VGA_G[3]                     : T24       : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : T25       :        :                   :         : 5         :                
+GPIO_1[11]                   : T26       : bidir  : 2.5 V             :         : 5         : N              
+GXB_GND*                     : U1        :        :                   :         : QL0       :                
+GXB_GND*                     : U2        :        :                   :         : QL0       :                
+GND                          : U3        : gnd    :                   :         :           :                
+GND                          : U4        : gnd    :                   :         :           :                
+VCCL_GXB                     : U5        : power  :                   : 1.2V    :           :                
+GND                          : U6        : gnd    :                   :         :           :                
+VCCA                         : U7        : power  :                   : 2.5V    :           :                
+GND                          : U8        : gnd    :                   :         :           :                
+GXB_GND*                     : U9        :        :                   :         : 3B        :                
+GXB_GND*                     : U10       :        :                   :         : 3B        :                
+VCCINT                       : U11       : power  :                   : 1.2V    :           :                
+AUD_BCLK                     : U12       : bidir  : 2.5 V             :         : 3         : N              
+VCCINT                       : U13       : power  :                   : 1.2V    :           :                
+VCC_CLKIN3A                  : U14       : power  :                   : 2.5V    : 3A        :                
+VCCINT                       : U15       : power  :                   : 1.2V    :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : U16       :        :                   :         : 4         :                
+VCCINT                       : U17       : power  :                   : 1.2V    :           :                
+FL_ADDR[18]                  : U18       : output : 2.5 V             :         : 4         : N              
+SRAM_DQ[0]                   : U19       : bidir  : 2.5 V             :         : 5         : N              
+VCCIO5                       : U20       : power  :                   : 2.5V    : 5         :                
+GND                          : U21       : gnd    :                   :         :           :                
+LEDG[5]                      : U22       : output : 2.5 V             :         : 5         : N              
+SRAM_DQ[10]                  : U23       : bidir  : 2.5 V             :         : 5         : N              
+SRAM_DQ[4]                   : U24       : bidir  : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : U25       :        :                   :         : 5         :                
+FL_DQ[4]                     : U26       : bidir  : 2.5 V             :         : 5         : N              
+GND                          : V1        : gnd    :                   :         :           :                
+GND                          : V2        : gnd    :                   :         :           :                
+GXB_NC                       : V3        :        :                   :         : QL0       :                
+GXB_NC                       : V4        :        :                   :         : QL0       :                
+VCCH_GXB                     : V5        : power  :                   : 2.5V    :           :                
+VCCD_PLL                     : V6        : power  :                   : 1.2V    :           :                
+GND                          : V7        : gnd    :                   :         :           :                
+VCCINT                       : V8        : power  :                   : 1.2V    :           :                
+VCC_CLKIN3B                  : V9        : power  :                   : 2.5V    : 3B        :                
+VCCINT                       : V10       : power  :                   : 1.2V    :           :                
+SW[9]                        : V11       : input  : 2.5 V             :         : 3         : N              
+HEX1[1]                      : V12       : output : 2.5 V             :         : 3         : N              
+VGA_B[3]                     : V13       : output : 2.5 V             :         : 3         : N              
+GPIO_1[14]                   : V14       : bidir  : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : V15       :        :                   :         : 4         :                
+SW[6]                        : V16       : input  : 2.5 V             :         : 4         : N              
+LEDG[3]                      : V17       : output : 2.5 V             :         : 4         : N              
+DRAM_CKE                     : V18       : output : 2.5 V             :         : 4         : N              
+GPIO_1[28]                   : V19       : bidir  : 2.5 V             :         : 4         : N              
+VCCIO5                       : V20       : power  :                   : 2.5V    : 5         :                
+LEDG[4]                      : V21       : output : 2.5 V             :         : 5         : N              
+DRAM_DQ[9]                   : V22       : bidir  : 2.5 V             :         : 5         : N              
+GPIO_1[27]                   : V23       : bidir  : 2.5 V             :         : 5         : N              
+LEDG[2]                      : V24       : output : 2.5 V             :         : 5         : N              
+GND                          : V25       : gnd    :                   :         :           :                
+LEDR[9]                      : V26       : output : 2.5 V             :         : 5         : N              
+GXB_GND*                     : W1        :        :                   :         : QL0       :                
+GXB_GND*                     : W2        :        :                   :         : QL0       :                
+GND                          : W3        : gnd    :                   :         :           :                
+GND                          : W4        : gnd    :                   :         :           :                
+VCCA_GXB                     : W5        : power  :                   : 2.5V    :           :                
+VCCA                         : W6        : power  :                   : 2.5V    :           :                
+MSEL3                        : W7        :        :                   :         : 3         :                
+VCCIO3                       : W8        : power  :                   : 2.5V    : 3         :                
+HEX2[1]                      : W9        : output : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : W10       :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : W11       :        :                   :         : 3         :                
+VGA_R[2]                     : W12       : output : 2.5 V             :         : 3         : N              
+GPIO_1[35]                   : W13       : bidir  : 2.5 V             :         : 3         : N              
+FL_OE_N                      : W14       : output : 2.5 V             :         : 3         : N              
+VGA_B[2]                     : W15       : output : 2.5 V             :         : 4         : N              
+PS2_CLK                      : W16       : input  : 2.5 V             :         : 4         : N              
+DRAM_LDQM                    : W17       : output : 2.5 V             :         : 4         : N              
+DRAM_DQ[11]                  : W18       : bidir  : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : W19       :        :                   :         : 4         :                
+GND                          : W20       : gnd    :                   :         :           :                
+VCCA                         : W21       : power  :                   : 2.5V    :           :                
+SRAM_ADDR[17]                : W22       : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : W23       :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : W24       :        :                   :         : 5         :                
+DRAM_ADDR[9]                 : W25       : output : 2.5 V             :         : 5         : N              
+I2C_SDAT                     : W26       : bidir  : 2.5 V             :         : 5         : N              
+GND                          : Y1        : gnd    :                   :         :           :                
+GND                          : Y2        : gnd    :                   :         :           :                
+GXB_NC                       : Y3        :        :                   :         : QL0       :                
+GXB_NC                       : Y4        :        :                   :         : QL0       :                
+VCCL_GXB                     : Y5        : power  :                   : 1.2V    :           :                
+MSEL2                        : Y6        :        :                   :         : 3         :                
+MSEL1                        : Y7        :        :                   :         : 3         :                
+GND                          : Y8        : gnd    :                   :         :           :                
+SRAM_CE_N                    : Y9        : output : 2.5 V             :         : 3         : N              
+FL_ADDR[19]                  : Y10       : output : 2.5 V             :         : 3         : N              
+DRAM_ADDR[5]                 : Y11       : output : 2.5 V             :         : 3         : N              
+SRAM_DQ[11]                  : Y12       : bidir  : 2.5 V             :         : 3         : N              
+SRAM_ADDR[3]                 : Y13       : output : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : Y14       :        :                   :         : 3         :                
+VCCIO4                       : Y15       : power  :                   : 2.5V    : 4         :                
+GND                          : Y16       : gnd    :                   :         :           :                
+GPIO_1[24]                   : Y17       : bidir  : 2.5 V             :         : 4         : N              
+GND                          : Y18       : gnd    :                   :         :           :                
+VCCIO4                       : Y19       : power  :                   : 2.5V    : 4         :                
+VCCD_PLL                     : Y20       : power  :                   : 1.2V    :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : Y21       :        :                   :         : 4         :                
+HEX2[4]                      : Y22       : output : 2.5 V             :         : 5         : N              
+GPIO_0[15]                   : Y23       : bidir  : 2.5 V             :         : 5         : N              
+SRAM_DQ[2]                   : Y24       : bidir  : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : Y25       :        :                   :         : 5         :                
+DRAM_ADDR[11]                : Y26       : output : 2.5 V             :         : 5         : N              
